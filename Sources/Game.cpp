@@ -75,8 +75,8 @@ void Update()
     FillRect(targetRect, Color::red);
 
     // スコアの描画
-    SetFont("nicoca_v1.ttf", 20.0f);
-    DrawText(FormatString("%05d", score), Vector2(-319, 199), Color::black);
-    DrawText(FormatString("%05d", score), Vector2(-320, 200), Color::white);
+    SetFont("nicoca_v1.ttf", 80.0f);
+    DrawText(FormatString("%05d", score), Vector2(-299, 149), Color::black);
+    DrawText(FormatString("%05d", score), Vector2(-300, 150), Color::white);
 }
 
