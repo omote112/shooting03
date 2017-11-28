@@ -7,7 +7,7 @@
 // TODO: 弾のスピードを速くし、弾が画面右端を通り越したら再度発射可能にする。(D)
 // TODO: スコアのサイズを大きくする。(E)
 // TODO: スコアを100点ずつ加算するようにし、5桁の表示に変える。(F)
-// TODO: PlayBGM()関数を使って、BGMを再生する。(G)
+// TODO: PlayBGM()関数を使って、BGMを再生する。(G)(実装者:HW16A044 表 朋樹)
 // TODO: PlaySE()関数を使って、弾の発射時とターゲットに当たった時にSEを再生する。(H)
 
 
@@ -21,6 +21,7 @@ int     score;          //!< スコア
 // ゲーム開始時に呼ばれる関数です。
 void Start()
 {
+    PlayBGM("bgm_maoudamashii_8bit07.mp3");
     cloudPos = Vector2(-320, 100);
     cannonPos = Vector2(-300, -150);
     targetRect = Rect(270, -140, 40, 40);
